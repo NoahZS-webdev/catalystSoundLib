@@ -1,0 +1,39 @@
+/* Stylesheet by Noah Sisson and Nathan Porter */
+/* 
+code for different viewports
+@media only screen and (max-width: ???px){}
+*/
+
+/* styles for main elements */
+
+body {
+    background-color: #ffffff;
+}
+
+h2 {
+    padding-left: 1em;
+}
+
+
+/* styles for nav bar flex container and flex items */
+.flexContainerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1d1d1c;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.flexNav {
+    background-color: #adadac;
+    margin: .25em .5em .25em .5em;
+    padding: .25em .5em .25em .5em;
+    border-radius: 10px;
+}
+
+.flexHeader {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
