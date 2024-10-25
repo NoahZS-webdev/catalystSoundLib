@@ -21,15 +21,26 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     background-color: #1d1d1c;
-    color: #ffffff;
     border-radius: 10px;
+    color: #ffffff;
 }
 
-.flexNav {
+.btn {
     background-color: #adadac;
     margin: .25em .5em .25em .5em;
     padding: .25em .5em .25em .5em;
-    border-radius: 10px;
+    border-radius: 30px;
+    height: 3.3em;
+}
+
+.btn:hover {
+    background-color: #aaaaba;
+}
+
+.btn a{
+    color: #ffffff;
+    display: block;
+    margin-top: 1em;
 }
 
 .flexHeader {
@@ -39,5 +50,12 @@ h2 {
 }
 
 .searchBar input{
-    margin: 3em;
+    margin: 1em;
+}
+
+input[type=text], select, textarea {
+    padding: 1em;
+    border: 1px solid #ccc;
+    width: 50em;
+    text-align: center;
 }
