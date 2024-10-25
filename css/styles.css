@@ -80,3 +80,7 @@ input[type=text], select, textarea {
 .spacer {
     height: 100px;
 }
+
+.collections{
+    background-color: #edfdff;
+}
