@@ -47,6 +47,8 @@ h2 {
     color: #ffffff;
     display: block;
     margin-top: 1em;
+    width: 50px;
+    height: 50px;
 }
 
 .flexHeader {
@@ -54,6 +56,11 @@ h2 {
     flex-grow: 0;
     flex-direction: row;
     width: auto;
+}
+
+.flexSearch {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .searchBar input{
@@ -65,6 +72,11 @@ input[type=text], select, textarea {
     border-radius: 50px;
     padding: 1em 1em 1em 1em;
     border: none;
-    width: auto;
+    width: 80%;
     text-align: left;
+}
+
+/* style specifies how big the spacer div is */
+.spacer {
+    height: 100px;
 }
