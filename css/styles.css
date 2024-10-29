@@ -93,6 +93,21 @@ input[type=text], select, textarea {
     height: 100px;
 }
 
-.collections{
+.flexContain{
+    margin: auto;
     background-color: #edfdff;
+    flex-basis: 68%;
+    padding: 1em;
+}
+
+.flexFilter{
+    margin: auto;
+    background-color: #f4e8c9;
+    flex-basis: 28%;
+    padding: 1em;
+}
+
+
+.flexbox{
+    display: flex;
 }
