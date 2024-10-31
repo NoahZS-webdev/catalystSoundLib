@@ -16,6 +16,9 @@ h2 {
     margin-left: 1em;
     padding: .5em;
     border-radius: 25px;
+    font-family: "asap", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 i {
@@ -26,6 +29,11 @@ i {
     margin-left: .25em;
 }
 
+label {
+    font-family: "asap", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
 
 /* styles for nav bar flex container and flex items */
 .flexContainerNav {
@@ -85,6 +93,7 @@ input[type=text], select, textarea {
     border: none;
     width: 80%;
     text-align: left;
+    font-style: italic;
 }
 
 .flexContain {
@@ -114,6 +123,9 @@ input[type=text], select, textarea {
 .filterdpop h1 {
     padding-left:1em;
     font-size: 2em;
+    font-family: "asap", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .collectionsContainer {
@@ -152,21 +164,32 @@ input[type=text], select, textarea {
     background-color: #f4e8c9;
     flex-basis: 33%;
     border-radius: 25px;
+    padding: 1em;
 }
 
 .filterdpop2 h1 {
-    padding: 1em;
+    padding: 0 1em 1em 1em;
     text-align: center;
+    margin: 0;
+    font-family: "asap", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.filtersConainer {
+.filtersContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 1em;
 }
 
 .filterButton h3 {
-    font-size: 10pt;
+    font-size: 15pt;
+    margin:0;
+    padding: .25em;
+    font-family: "asap", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .filterButton {
@@ -177,4 +200,15 @@ input[type=text], select, textarea {
     width: auto;
 }
 
+.flexFilterSearch input[type=text], select, textarea {
+    background-color: #5273ff;
+    color: #edfdff;
+    border-radius: 50px;
+    padding: 1em;
+    margin-bottom: .5em;
+    border: none;
+    width: 80%;
+    text-align: left;
+    font-style: italic;
+}
 /* end styles for main section */
