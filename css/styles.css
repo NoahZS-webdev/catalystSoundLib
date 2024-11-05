@@ -101,9 +101,14 @@ input[type=text], select, textarea {
     flex-direction: row;
 }
 
-/* style specifies how big the spacer div is */
+/* style specifies how big the spacer divs are */
 .spacer {
-    height: 100px;
+    height: 40vh;
+
+}
+
+.spacer2 {
+    height: 50vh;
 }
 /**/
 
@@ -198,6 +203,7 @@ input[type=text], select, textarea {
     border-radius: 25px;
     padding: 5px;
     width: auto;
+    margin-right: .5em;
 }
 
 .flexFilterSearch input[type=text], select, textarea {
