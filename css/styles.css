@@ -36,6 +36,13 @@ label {
 }
 
 /* styles for nav bar flex container and flex items */
+
+.bannerImg {
+    max-width: 90%;
+    object-position:0 -200px;
+    margin-left: 5%;
+}
+
 .flexContainerNav {
     display: flex;
     flex-direction: row;
@@ -45,6 +52,7 @@ label {
     border-radius: 50px;
     color: #ffffff;
     margin: 1em;
+    margin-bottom: 0;
 }
 
 .btn {
@@ -218,3 +226,9 @@ input[type=text], select, textarea {
     font-style: italic;
 }
 /* end styles for main section */
+
+@media only screen and (max-width:690px) {
+    .topBox {
+        display: none;
+    }
+}
