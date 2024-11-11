@@ -37,11 +37,16 @@ label {
 
 /* styles for nav bar flex container and flex items */
 
+.topBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bannerImg {
     max-width: 90%;
     position: relative;
-    margin-left: 5%;
-    margin-top: -500px;
+    margin-top: -250px;
 }
 
 .flexContainerNav {
@@ -52,11 +57,11 @@ label {
     background-color: #f4e8c9;
     border-radius: 50px;
     color: #ffffff;
-    margin: 1em;
-    margin-bottom: 10px;
+    margin: auto;
     top: 1em;
-    position: sticky;
+    position: fixed;
     z-index: 2;
+    width: 96%;
 }
 
 .btn {
@@ -134,9 +139,14 @@ input[type=search], select, textarea {
 }
 
 .filterdpop {
+    display: flex;
+    flex-direction: column;
     background-color: #edfdff;
     flex-basis: 67%;
     border-radius: 25px;
+    max-width: 67%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .filterdpop h1 {
@@ -145,12 +155,16 @@ input[type=search], select, textarea {
     font-family: "asap", sans-serif;
     font-weight: 600;
     font-style: normal;
+    text-align: left;
 }
 
 .collectionsContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 95%;
+    overflow-x: auto;
+    overflow-y: hidden;
 
 }
 
@@ -161,6 +175,7 @@ input[type=search], select, textarea {
     text-align: center;
     border-radius: 25px;
     height: 10em;
+    min-width: 10em;
 }
 
 .flexSoundbox i {
@@ -173,6 +188,7 @@ input[type=search], select, textarea {
     margin: 0;
     padding: 0;
     border-radius: 0;
+    font-size: 15pt;
 }
 
 .flexSoundbox a {
@@ -220,6 +236,11 @@ input[type=search], select, textarea {
     margin-right: .5em;
 }
 
+.flexFilterSearch {
+    display: flex;
+    justify-content: center;
+}
+
 .flexFilterSearch input[type=text], select, textarea {
     background-color: #5273ff;
     color: #edfdff;
@@ -231,6 +252,12 @@ input[type=search], select, textarea {
     text-align: left;
     font-style: italic;
 }
+
+.h1Container {
+    width: 100%;
+    text-align: left;
+}
+
 /* end styles for main section */
 
 @media only screen and (max-width:690px) {
