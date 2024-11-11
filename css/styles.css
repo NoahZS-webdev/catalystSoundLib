@@ -37,18 +37,21 @@ label {
 
 /* styles for nav bar flex container and flex items */
 
+/* top box is a flex container that has moth the nav bar and banner image */
 .topBox {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* aligns and places audio visualizer image within topBox */
 .bannerImg {
     max-width: 90%;
     position: relative;
     margin-top: -250px;
 }
 
+/* the flexbox that contains the nav bar and everythin in it */
 .flexContainerNav {
     display: flex;
     flex-direction: row;
@@ -64,19 +67,16 @@ label {
     width: 96%;
 }
 
+/* button classes for 3 buttons in nav bar */
 .btn {
     background-color: #5273ff;
     margin: .25em .5em .25em .5em;
     padding: .25em .5em .25em .5em;
     border-radius: 30px;
     height: 3.3em;
-}
-
-.btn:hover {
+}.btn:hover {
     background-color: #aaf3fa;
-}
-
-.btn a{
+}.btn a{
     text-align:center;
     color: #ffffff;
     display: block;
@@ -86,6 +86,7 @@ label {
     margin:0;
 }
 
+/* 'flexHeader' is the class for the flebox item logo image (not there yet)*/
 .flexHeader {
     display: flex;
     flex-grow: 0;
@@ -93,20 +94,18 @@ label {
     width: auto;
 }
 
+/* search Bar in nav bar*/
 .flexSearch {
     flex-grow: 1;
     text-align: center;
-}
-
-.flexSearch input{
+}.flexSearch input{
     margin: 1em;
-}
-
-.flexSearch [list]::-webkit-list-button,
+}.flexSearch [list]::-webkit-list-button,
 .flexSearch [list]::-webkit-calendar-picker-indicator {
   display: none !important;
 }
 
+/* class that styles input */
 input[type=search], select, textarea {
     background-color: #5273ff;
     color: #edfdff;
@@ -119,15 +118,9 @@ input[type=search], select, textarea {
     font-size: 1.25em;
 }
 
-.flexContain {
-    display: flex;
-    flex-direction: row;
-}
-
 /* style specifies how big the spacer divs are */
 .spacer {
     height: 40vh;
-
 }
 
 .spacer2 {
@@ -137,12 +130,14 @@ input[type=search], select, textarea {
 
 /* styles for the main section */
 
+/* master div for the two side-by-side sections (scroller and filter search) */
 .mainDiv {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
 }
 
+/* div that contains collections and popular sounds */
 .filterdpop {
     display: flex;
     flex-direction: column;
@@ -152,9 +147,7 @@ input[type=search], select, textarea {
     max-width: 67%;
     justify-content: space-between;
     align-items: center;
-}
-
-.filterdpop h1 {
+}.filterdpop h1 {
     padding-left:1em;
     font-size: 2em;
     font-family: "asap", sans-serif;
@@ -163,6 +156,13 @@ input[type=search], select, textarea {
     text-align: left;
 }
 
+/* div that contains h1 tags in filterdpop */
+.h1Container {
+    width: 100%;
+    text-align: left;
+}
+
+/* flexbox container for horizontal scroller */
 .collectionsContainer {
     display: flex;
     flex-direction: row;
@@ -173,6 +173,7 @@ input[type=search], select, textarea {
 
 }
 
+/* flex item inside scroller */
 .flexSoundbox {
     background-color: #eb5858;
     margin: 1em;
@@ -181,33 +182,26 @@ input[type=search], select, textarea {
     border-radius: 25px;
     height: 10em;
     min-width: 10em;
-}
-
-.flexSoundbox i {
+}.flexSoundbox i {
     font-size: 50pt;
     text-align: center;
     padding-bottom: .4em;
-}
-
-.flexSoundbox h2{
+}.flexSoundbox h2{
     margin: 0;
     padding: 0;
     border-radius: 0;
     font-size: 15pt;
-}
-
-.flexSoundbox a {
+}.flexSoundbox a {
     text-decoration: none;
 }
 
+/* div that contains filter section */
 .filterdpop2 {
     background-color: #f4e8c9;
     flex-basis: 33%;
     border-radius: 25px;
     padding: 1em;
-}
-
-.filterdpop2 h1 {
+}.filterdpop2 h1 {
     padding: 0 1em 1em 1em;
     text-align: center;
     margin: 0;
@@ -216,6 +210,7 @@ input[type=search], select, textarea {
     font-style: normal;
 }
 
+/* flexbox for wrapping filter buttons */
 .filtersContainer {
     display: flex;
     flex-direction: row;
@@ -223,7 +218,16 @@ input[type=search], select, textarea {
     margin-bottom: 1em;
 }
 
-.filterButton h3 {
+/* flex item for filtersContainer */
+.filterButton {
+    background-color: #1f2b5d;
+    color: #edfdff;
+    border-radius: 25px;
+    padding: 5px;
+    width: auto;
+    margin-right: .5em;
+    margin-bottom: .5em;
+}.filterButton h3 {
     font-size: 15pt;
     margin:0;
     padding: .25em;
@@ -232,15 +236,7 @@ input[type=search], select, textarea {
     font-style: normal;
 }
 
-.filterButton {
-    background-color: #1f2b5d;
-    color: #edfdff;
-    border-radius: 25px;
-    padding: 5px;
-    width: auto;
-    margin-right: .5em;
-}
-
+/* div that contains search bar in filters section */
 .flexFilterSearch {
     display: flex;
     justify-content: center;
@@ -258,13 +254,11 @@ input[type=search], select, textarea {
     font-style: italic;
 }
 
-.h1Container {
-    width: 100%;
-    text-align: left;
-}
-
 /* end styles for main section */
 
+/*
+MOBILE STYLES BEGIN
+*/
 @media only screen and (max-width:690px) {
     .topBox {
         display: none;
