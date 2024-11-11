@@ -93,8 +93,13 @@ label {
     text-align: center;
 }
 
-.searchBar input{
+.flexSearch input{
     margin: 1em;
+}
+
+.flexSearch [list]::-webkit-list-button,
+.flexSearch [list]::-webkit-calendar-picker-indicator {
+  display: none !important;
 }
 
 input[type=search], select, textarea {
