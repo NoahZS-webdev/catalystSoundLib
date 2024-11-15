@@ -1,0 +1,15 @@
+.mainSect {
+    background-color: #ffffff;
+    text-align: center;
+    margin: -8em 2em 2em 2em;
+    padding: 1em;
+}.mainSect h2 {
+    margin: 0;
+    width: 20%;
+}
+
+.dropBox {
+    background-color: #adbcd1;
+    width: 50%;
+    height: 10em;
+}
