@@ -3,13 +3,41 @@
     text-align: center;
     margin: -8em 2em 2em 2em;
     padding: 1em;
+    border-radius: 5px;
 }.mainSect h2 {
     margin: 0;
-    width: 20%;
 }
 
 .dropBox {
-    background-color: #adbcd1;
-    width: 50%;
-    height: 10em;
+    display: flex;
+    flex-direction: column;
+    background-color: #c3cad3;
+    height: 30em;
+    border-radius: 5px;
+    border: double #707070 5px;
+}
+
+.surface {
+    display: flex;
+    flex-direction: row;
+}
+
+.subSurface {
+    flex-basis: 50%;
+    margin: 1em;
+}
+
+.bigIcon {
+    font-size: 4em;
+}
+
+.underText {
+    margin-top: 3em;
+    font-family: "asap", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.options {
+    text-align: left;
 }
