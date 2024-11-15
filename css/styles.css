@@ -23,7 +23,6 @@ h2 {
 
 i {
     font-size: 2em;
-    color: #edfdff;
     margin-top: .25em;
     margin-right: .25em;
     margin-left: .25em;
@@ -72,17 +71,18 @@ label {
     padding: .25em .5em .25em .5em;
     border-radius: 30px;
     height: 3.3em;
-}.btn a:hover {
-    color: #59cf6a;
+}.btn a i:hover {
+    color: #80a1bb;
 }.btn a{
     text-align:center;
-    color: #59cf6a;
+    color: #ffffff;
     display: block;
     width: 50px;
     height: 50px;
     padding:0;
     margin:0;
 }
+
 
 /* 'flexHeader' is the class for the flebox item logo image (not there yet)*/
 .flexHeader {
