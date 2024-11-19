@@ -2,24 +2,37 @@
 <html lang="en">
 
 <head>
-    <!--Developed by Noah Sisson and Nathan Porter-->
+    <!--
+    Developed by Noah Sisson and Nathan Porter :)
+
+    |\__/,|   (`\
+  _.|o o  |_   ) )
+-(((---(((--------
+
+    -->
     <title>Catalyst Sound Library</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/sxb6bat.css">
+
+    <!--fontawesome icons-->
     <script src="https://kit.fontawesome.com/e1899d146a.js" crossorigin="anonymous"></script>
+
+    <!--This script defines the function that generates random colors for flexSoundBox-->
+    <script src="scripts/randomColors.js"></script>
+
 </head>
 
 <body>
-    <!--
-    *'flexContainerNav' is the flex container class for the nav bar
-    *'flexNav' is the class for the flex items in 'flexContainerNav'
-    *'flexHeader' is the class for the flebox item spesifically for the logo and another flexbox withing the first ont to contain flexnav
-    -->
+    <!--contains nav bar AND banner image (may change later)-->
     <div class="topBox">
-    <div class="flexContainerNav">
+        <!--div that contains the nav bar-->
 
+    <div class="flexContainerNav">
+        <!--Home button-->
         <div class="btn" style="margin-left: 100px"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
 
         <!-- Section for the search bar -->
@@ -27,104 +40,128 @@
                 <input type="search" id="search" name="search" value="What are you looking for?">
         </div>
 
-
+        <!--flexbox that contains buttons in the nav bar (Both left and right)-->
         <div class="flexHeader">
+            <!--upload button-->
             <div class="btn" style="margin-left: 0px;"><a href="uploadGate.html"><i class="fa-solid fa-upload"></i></a></div>
+            <!--User button-->
             <div class="btn"><a href="#"><i class="fa-solid fa-user"></i></a></div>
+            <!--library button it currently has no planned use FIX LATER-->
             <div class="btn" style="margin-right: 100px"><a href="#"><i class="fa-solid fa-book-open"></i></a></div>
         </div>
-    </div>
 
-    <img src="media/visualizerMOD.png" class="bannerImg">
     </div>
+    <!--Banner image 
+    FIX LATER
+    (setting the spacer div's background-image property to the picture might fix aligning issues) -Noah
 
-    <!--Space between the nav bar and the next section-->
-<!-- <div class="spacer"></div>
+    div class="spacer"></div>
         <p>&nbsp;</p>
-</div>
-     -->
-<!-- Section for the flexbox containing the sounds/categories -->
+    </div>
+
+    -->
+        <img src="media/visualizerMOD.png" class="bannerImg">
+    </div>
+
+
+<!--
+Section for the flexboxes containing the collections/Popular sounds
+
+ the following code was developed with 3 hours of sleep and 700mg of caffine. 
+ dont even try.
+ 
+ Ask Noah about it.
+ Only he can comprehend the hellscape he has created.
+ -->
  <section class="mainSection">
 <div class="mainDiv">
  <div class="filterdpop">
     <div class="h1Container"><h1>Collections</h1></div>
     <div class="collectionsContainer">
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget1">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-book-bookmark"></i>
                 <h2>Horror Stings</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget2">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-book-bookmark"></i>
                 <h2>Jazz Riffs</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget3">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-book-bookmark"></i>
                 <h2>Dave</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget4">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-book-bookmark"></i>
                 <h2>Yo mama</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget5">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-book-bookmark"></i>
                 <h2>Risers</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget6">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-book-bookmark"></i>
                 <h2>Weezer Riffs</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget7">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-book-bookmark"></i>
                 <h2>Item4</h2>
             </a>
         </div>
+        
+        <div class="flexSoundbox" style="background-color: #12171b; display: grid; align-items: center;">
+            <a href="collections.html" class="FlexCollect">
+                <h2>See More</h2>
+            </a>
+        </div>
+    
     </div>
+    <!-- ===================================================-->
 
     <div class="h1Container"><h1>Popular Sounds</h1></div>
     <div class="collectionsContainer">
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget8">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-music"></i>
                 <h2>ahhhhh.wav</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget9">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-music"></i>
                 <h2>MrBlueSky.mp3</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget10">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-music"></i>
                 <h2>Item3</h2>
             </a>
         </div>
 
-        <div class="flexSoundbox">
+        <div class="flexSoundbox" id="randTarget11">
             <a href="#" class="FlexCollect">
                 <i class="fa-solid fa-music"></i>
                 <h2>Item4</h2>
@@ -134,13 +171,14 @@
 
 
 </div>
+    <!--Filter section-->
     <div class="filterdpop2">
         <h1>FILTERS</h1>
-
+        <!--Filter search bar-->
         <div class="flexFilterSearch">
             <input type="text" id="filterFind" name="filterFind" value="How can I help you?">
         </div>
-
+        <!--Filter buttons-->
         <div class="filtersContainer">
             <div class="filterButton"><h3>Birds</h3></div>
             <div class="filterButton"><h3>Voices</h3></div>
@@ -151,7 +189,7 @@
             <div class="filterButton"><h3>Animals</h3></div>
         </div>
 
-
+        <!--FIX LATER these currently have no use-->
         <input type="checkbox" id="item1" name="item1" value="item1">
         <label for="item1">Item1</label>
         <br>
@@ -162,6 +200,7 @@
         <label for="item1">Item3</label>
     </div>
 </div>
+
 </section>
 
 <!--Space between the nav bar and the next section-->
@@ -169,15 +208,30 @@
     <p>&nbsp;</p>
 </section>
 
+<!--Gives each flexSoundBox a random color via randomColors.js
 
+FIX LATER there is definitely a much more efficiant way to do this
+-->
+<script>
+    document.getElementById("randTarget1").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget2").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget3").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget4").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget5").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget6").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget7").style.backgroundColor = genRandCol()
 
-
+    document.getElementById("randTarget8").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget9").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget10").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget11").style.backgroundColor = genRandCol()
+</script>
 
 </body>
-
 </html>
 
-<!--
+<!--    Icons in case you need them :)
+
 <i class="fa-solid fa-book-bookmark"></i>   COLLECTIONS
 <i class="fa-solid fa-circle-play"></i>     PLAY BUTTON
 <i class="fa-solid fa-headphones"></i>      HEADPHONES
