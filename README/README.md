@@ -50,6 +50,10 @@ scripts folder - contains all .js files for the website
 
 3) Certain parts of code will be tagged with FIX LATER. If you need to find things that are broken or just aren't done yet, type ctrl+F and search "FIX LATER". That will highlight sections of code that need changes.
 
+4) Pretty please label your code. It makes it easier for other people on the project to read and understand.
+
+5) There is a discord for the project. If you'd like access to it, ask Noah :)
+
 Thanks for reading! Happy Coding. May your duck guide you.
  
 :)
