@@ -42,11 +42,4 @@ scripts folder - contains all .js files for the website
 .vscode folder - idek its an automatic github thing i wouldnt mess with it
 
 Thanks for reading! Happy Coding. May your duck guide you.
-      ,~~.
- ,   (  - )>
- )`~~'   (
-(  .__)   )
- `-.____,'
-
-
  
