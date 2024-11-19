@@ -56,7 +56,6 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     background-color: #12171b;
     color: #ffffff;
     margin-top: -8px;
@@ -66,15 +65,16 @@ label {
 }
 
 /* button classes for 3 buttons in nav bar */
-.btn {
-    margin: .25em .5em .25em .5em;
-    padding: .25em .5em .25em .5em;
+.hbtn {
     border-radius: 30px;
     height: 3.3em;
-}.btn a i:hover {
-    color: #80a1bb;
-}.btn a{
-    text-align:center;
+    align-self: center;
+}.hbtn a i:hover {
+    color: #12171b;
+    background-color: #ffffff;
+}.hbtn a{
+    display: flex;
+    justify-content: center;
     color: #ffffff;
     display: block;
     width: 50px;
@@ -82,11 +82,20 @@ label {
     padding:0;
     margin:0;
 }
+.hbtn a i{
+    align-self: center;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: -1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 
 /* 'flexHeader' is the class for the flebox item logo image (not there yet)*/
 .flexHeader {
     display: flex;
+    justify-content: center;
     flex-grow: 0;
     flex-direction: row;
     width: auto;
