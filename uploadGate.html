@@ -22,6 +22,8 @@
     <div class="topBox">
     <div class="flexContainerNav">
 
+        <div class="btn"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+
         <!-- Section for the search bar -->
         <div class="flexSearch">
                 <input type="search" id="search" name="search" value="What are you looking for?">
@@ -40,25 +42,32 @@
 
     <section class="mainSect">
     <div class="surface">
-
-        <div class="subSurface">
-            <div class="dropBox">
-                <div class="bigIcon"><i class="fa-solid fa-upload"></i></div>
-                <div class="underText"><h3>Drag files here or click to browse</h3></div>
+        <form>
+            <div class="subSurface">
+                <div class="dropBox">
+                    <div class="bigIcon"><i class="fa-solid fa-upload"></i></div>
+                    <div class="underText">
+                        
+                            <label for="upload">Upload an audio file:</label>
+                            <br><br><br>
+                            <input type="file" id="upload" name="upload" accept="audio/mp3, audio/wav">
+                    </div>
+                </div>
             </div>
-        </div>
+        
 
-        <div class="subSurface">
-            <div class="title"><h2>Upload Sound</h2></div>
-            <div class="options">
-                <h3>Sound Title</h3>
-                <h3>Description</h3>
-                <h3>Photo (optional)</h3>
-                <h3>Author/Creator</h3>
-                <h3>Tags</h3>
+            <div class="subSurface">
+                <div class="title"><h2>Upload Sound</h2></div>
+                <div class="options">
+                    <h3>Sound Title</h3>
+                    <h3>Description</h3>
+                    <h3>Photo (optional)</h3>
+                    <h3>Author/Creator</h3>
+                    <h3>Tags</h3>
 
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
     </section>
