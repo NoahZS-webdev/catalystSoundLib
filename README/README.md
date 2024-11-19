@@ -1,3 +1,5 @@
+
+
 Hello! This is the github repository for the Catalyst Center SFX library project.
 If you need info about files or just the project in general, it shold be here.
 If not, just ask either me (Noah) or Nathan! :)
@@ -26,7 +28,7 @@ HTML files - all html files aren't in a folder for ease of use when linking file
 * dataCollection.html - where data is sent from uploadGate.html. Will be changes in the future
 
 CSS folder - Contains all external stylesheets
-* styles.css - main stylesheet for the entire website. If you need to change a css property that is unique to the page you are working on, we ask that you use either an internal stylesheet or direct styling
+* styles.css - main stylesheet for the entire website.
 * uploadStyles.css - stylesheet for uploadGate.html
 
 Media folder - contains all images and other misc files for the website
@@ -41,5 +43,13 @@ scripts folder - contains all .js files for the website
 
 .vscode folder - idek its an automatic github thing i wouldnt mess with it
 
+====================THINGS TO NOTE====================
+1) styles.css is the main stylesheet. It encompasses the entire website. If you need to change a css property that is unique to the page you are working on, we ask that you use either an internal stylesheet or direct styling.
+
+2) If you have a large commit, please name it and write a quick description. It makes version control easier and more readable. If its just a few lines of code, don't worry about it.
+
+3) Certain parts of code will be tagged with FIX LATER. If you need to find things that are broken or just aren't done yet, type ctrl+F and search "FIX LATER". That will highlight sections of code that need changes.
+
 Thanks for reading! Happy Coding. May your duck guide you.
  
+:)
