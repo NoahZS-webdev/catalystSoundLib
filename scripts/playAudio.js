@@ -1,3 +1,6 @@
-const sound1 = document.querySelector("audio");
 
-sound1.play()
+const audioID = document.getElementById("audioID");
+
+function playSound() {
+    audioID.play();
+};
