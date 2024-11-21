@@ -8,6 +8,8 @@ code for different viewports
 
 body {
     background-color: #232c35;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 h2 {
@@ -159,6 +161,7 @@ input[type=search], select, textarea {
     max-width: 67%;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 75px;
 }.filterdpop h1 {
     padding-left:1em;
     font-size: 2em;
@@ -247,20 +250,20 @@ input[type=search], select, textarea {
 
 .MOSES {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
     border-radius: 5px;
+    text-align: left;
 }.MOSES2 {
-    max-width: 100%;
-    overflow: hidden;
+    width: 100%;
+    margin: 0;
 }.MOSES2 i{
     font-size: 25pt;
 }.MOSES2 h2{
     text-decoration: none;
-}.MOSES3 i{
-    font-size: 25pt;
+    margin:0;
 }
 
 /* flexbox for wrapping filter buttons */
