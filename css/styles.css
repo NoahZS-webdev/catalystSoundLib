@@ -21,6 +21,7 @@ h2 {
 }
 
 i {
+    color: #ffffff;
     font-size: 2em;
     margin-top: .25em;
     margin-right: .25em;
@@ -31,6 +32,12 @@ label {
     font-family: "asap", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+a {
+    text-decoration: none;
+} a:active {
+    color: #ffffff;
 }
 
 /* styles for nav bar flex container and flex items */
@@ -177,7 +184,20 @@ input[type=search], select, textarea {
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: grey #12171b;
+}.collectionsContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    flex-wrap: wrap;
+    gap: 10px
 }
+
+.audioList {
+    flex-basis: 45%;
+    border-radius: 5px;
+}
+
 
 /* flex item inside scroller */
 .flexSoundbox {
@@ -191,7 +211,7 @@ input[type=search], select, textarea {
 }.flexSoundbox i {
     font-size: 50pt;
     text-align: center;
-    padding-bottom: .4em;
+    padding-bottom: .2em;
     color: #ffffff;
 }.flexSoundbox h2{
     color: #ffffff;
@@ -209,7 +229,6 @@ input[type=search], select, textarea {
 .flexSoundbox a {
     text-decoration: none;
 }
-
 /* div that contains filter section */
 .filterdpop2 {
     background-color: #12171b;
@@ -226,12 +245,31 @@ input[type=search], select, textarea {
     font-style: normal;
 }
 
+.MOSES {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+}.MOSES2 {
+    max-width: 100%;
+    overflow: hidden;
+}.MOSES2 i{
+    font-size: 25pt;
+}.MOSES2 h2{
+    text-decoration: none;
+}.MOSES3 i{
+    font-size: 25pt;
+}
+
 /* flexbox for wrapping filter buttons */
 .filtersContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 1em;
+    gap: 5px;
 }
 
 /* flex item for filtersContainer */
@@ -241,8 +279,9 @@ input[type=search], select, textarea {
     border-radius: 25px;
     padding: 5px;
     width: auto;
-    margin-right: .5em;
-    margin-bottom: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    border: solid #ffffff 1px;
 }.filterButton h3 {
     font-size: 15pt;
     margin:0;
@@ -264,7 +303,7 @@ input[type=search], select, textarea {
 .flexFilterSearch input[type=text], select, textarea {
     background-color: #3754BE;
     color: #edfdff;
-    border-radius: 50px;
+    border-radius: 5px;
     padding: 1em;
     margin-bottom: .5em;
     border: none;

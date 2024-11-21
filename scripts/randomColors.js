@@ -6,19 +6,22 @@ function genRandCol() {
     randCol = Math.floor(Math.random() * 5);
     /* takes random value and assigns a color */
     if (randCol == 1) {
-        return "#3754BE"
+        return "#599dcf"
     }
     else if (randCol == 2) {
         return "#59cf6a"
     }
     else if (randCol == 3) {
-        return "#7357bd"
+        return "#259ad9"
     }
     else if (randCol == 4) {
-        return "#48dd99"
+        return "#2d7a57"
     }
     else if (randCol == 5) {
-        return "#8b8e8f"
+        return "#3754be"
+    }
+    else if (randCol == 0) {
+        return "#8337be"
     }
 
 }

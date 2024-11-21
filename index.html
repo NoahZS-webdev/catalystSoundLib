@@ -23,6 +23,9 @@
 
     <!--This script defines the function that generates random colors for flexSoundBox-->
     <script src="scripts/randomColors.js"></script>
+    
+
+    
 
 </head>
 
@@ -138,35 +141,51 @@ Section for the flexboxes containing the collections/Popular sounds
     <!-- ===================================================-->
 
     <div class="h1Container"><h1>Popular Sounds</h1></div>
-    <div class="collectionsContainer">
+    <div class="collectionsContainer2">
 
-        <div class="flexSoundbox" id="randTarget8">
-            <a href="#" class="FlexCollect">
-                <i class="fa-solid fa-music"></i>
-                <h2>ahhhhh.wav</h2>
-            </a>
+        <div class="audioList" id="randTarget8">
+                <div class="MOSES">
+                    <div class="MOSES2"><h2>Audio 1_05Test.mp3</h2></div>
+                    <div class="MOSES3"><i class="fa-solid fa-circle-play"></i></div>
+                    <audio src="audioFiles/Audio 1_05Test.mp3"></audio>
+                </div>
         </div>
 
-        <div class="flexSoundbox" id="randTarget9">
-            <a href="#" class="FlexCollect">
-                <i class="fa-solid fa-music"></i>
-                <h2>MrBlueSky.mp3</h2>
-            </a>
+        <div class="audioList" id="randTarget9">
+                <div class="MOSES">
+                    <div class="MOSES2"><h2>SFX_Library.wav</h2></div>
+                    <div class="MOSES3"><i class="fa-solid fa-circle-play"></i></div>
+                </div>
         </div>
 
-        <div class="flexSoundbox" id="randTarget10">
-            <a href="#" class="FlexCollect">
-                <i class="fa-solid fa-music"></i>
-                <h2>Item3</h2>
-            </a>
+        <div class="audioList" id="randTarget10">
+                <div class="MOSES">
+                    <div class="MOSES2"><h2>SodaTestSFX.mp3</h2></div>
+                    <div class="MOSES3"><i class="fa-solid fa-circle-play"></i></div>
+                </div>
         </div>
 
-        <div class="flexSoundbox" id="randTarget11">
-            <a href="#" class="FlexCollect">
-                <i class="fa-solid fa-music"></i>
-                <h2>Item4</h2>
-            </a>
+        <div class="audioList" id="randTarget11">
+                <div class="MOSES">
+                    <div class="MOSES2"><h2>SodaTestSFX.wav</h2></div>
+                    <div class="MOSES3"><i class="fa-solid fa-circle-play"></i></div>
+                </div>
         </div>
+
+        <div class="audioList" id="randTarget12">
+                <div class="MOSES">
+                    <div class="MOSES2"><h2>TEST</h2></div>
+                    <div class="MOSES3"><i class="fa-solid fa-circle-play"></i></div>
+                </div>
+        </div>
+
+        <div class="audioList" id="randTarget13">
+                <div class="MOSES">
+                    <div class="MOSES2"><h2>TEST</h2></div>
+                    <div class="MOSES3"><i class="fa-solid fa-circle-play"></i></div>
+                </div>
+        </div>
+
     </div>
 
 
@@ -208,6 +227,10 @@ Section for the flexboxes containing the collections/Popular sounds
     <p>&nbsp;</p>
 </section>
 
+<div class="test">
+    <audio src="audioFiles/Audio 1_05Test.mp3"></audio>
+</div>
+
 <!--Gives each flexSoundBox a random color via randomColors.js
 
 FIX LATER there is definitely a much more efficiant way to do this
@@ -225,6 +248,8 @@ FIX LATER there is definitely a much more efficiant way to do this
     document.getElementById("randTarget9").style.backgroundColor = genRandCol()
     document.getElementById("randTarget10").style.backgroundColor = genRandCol()
     document.getElementById("randTarget11").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget12").style.backgroundColor = genRandCol()
+    document.getElementById("randTarget13").style.backgroundColor = genRandCol()
 </script>
 
 </body>
@@ -234,8 +259,7 @@ FIX LATER there is definitely a much more efficiant way to do this
 
 <i class="fa-solid fa-book-bookmark"></i>   COLLECTIONS
 <i class="fa-solid fa-circle-play"></i>     PLAY BUTTON
-<i class="fa-solid fa-headphones"></i>      HEADPHONES
-<i class="fa-solid fa-music"></i>           MUSIC NOTE
+<i class="fa-solid fa-headphones"></i>      HEADPH           MUSIC NOTE
 <i class="fa-solid fa-bookmark"></i>        BOOKMARK
 <i class="fa-solid fa-house"></i>           HOME
 <i class="fa-solid fa-star"></i>            STAR
