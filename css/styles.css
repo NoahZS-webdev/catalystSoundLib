@@ -200,7 +200,7 @@ input[type=search], select, textarea {
     justify-content: space-around;
     width: 95%;
     flex-wrap: wrap;
-    gap: 10px
+    grid-row-gap: 10px;
 }
 
 .audioList {
@@ -253,6 +253,8 @@ input[type=search], select, textarea {
     font-family: "asap", sans-serif;
     font-weight: 600;
     font-style: normal;
+}.filterdpop2 label {
+    color: #ffffff;
 }
 
 .MOSES {
