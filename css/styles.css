@@ -144,9 +144,7 @@ input[type=search], select, textarea {
 /* style specifies how big the spacer divs are */
 .spacer {
     height: 40vh;
-}
-
-.spacer2 {
+}.spacer2 {
     height: 50vh;
 }
 /**/
@@ -207,8 +205,10 @@ input[type=search], select, textarea {
 }
 
 .audioList {
-    flex-basis: 45%;
+    flex-basis: 48.5%;
     border-radius: 5px;
+    margin: 5px;
+    flex-wrap: nowrap;
 }
 
 
