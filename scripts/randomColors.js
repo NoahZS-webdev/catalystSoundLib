@@ -9,13 +9,13 @@ function genRandCol() {
         return "#599dcf"
     }
     else if (randCol == 2) {
-        return "#59cf6a"
+        return "#6C85E0"
     }
     else if (randCol == 3) {
-        return "#259ad9"
+        return "#6CCFE0"
     }
     else if (randCol == 4) {
-        return "#2d7a57"
+        return "#786CE0"
     }
     else if (randCol == 5) {
         return "#3754be"
