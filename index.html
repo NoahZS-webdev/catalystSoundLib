@@ -27,7 +27,7 @@
     <!--Audio script that doesnt work-->
     <script src="scripts/playAudio.js"></script>
     
-
+    
     
 
 </head>
@@ -62,7 +62,9 @@
 
     UPDATE! DONT CHANGE IT! IT BREAKS EVERYTHING (for some fucking reason) - NOAH
     -->
-        <img src="media/visualizerMOD.png" class="bannerImg">
+        <div style="margin-bottom: -400px;">
+            <img src="media/visualizerMOD.png" style="object-position: 0 -350px;">
+        </div>
     </div>
 
 
@@ -143,79 +145,79 @@ Section for the flexboxes containing the collections/Popular sounds
     <div class="collectionsContainer2">
 
         <div class="audioList" id="randTarget8">
-                <div class="MOSES">
-                    <div class="MOSES2"><h2>Audio 1_05Test.mp3</h2></div>
-                    <div class="MOSES2">
+                <div class="audioListSub1">
+                    <div class="audioListSub2"><h2>Audio 1_05Test.mp3</h2></div>
+                    <div class="audioListSub2">
                         <audio controls>
                             Your browser does not support this feature.
                             <source src="audioFiles/Audio 1_05Test.mp3" type="audio/mpeg">
                         </audio>
-                        <i class="fa-solid fa-download"></i>
+                        <i class="fa-solid fa-download switchBtn"></i>
                     </div>
                 </div>
         </div>
 
         <div class="audioList" id="randTarget9">
-                <div class="MOSES">
-                    <div class="MOSES2"><h2>SFX_Library.wav</h2></div>
-                    <div class="MOSES2">
+                <div class="audioListSub1">
+                    <div class="audioListSub2"><h2>SFX_Library.wav</h2></div>
+                    <div class="audioListSub2">
                         <audio controls>
                             Your browser does not support this feature.
                             <source src="audioFiles/SFX_Library.wav" type="audio/mpeg">
                         </audio>
-                        <i class="fa-solid fa-download"></i>
+                        <i class="fa-solid fa-download switchBtn"></i>
                     </div>
                 </div>
         </div>
 
         <div class="audioList" id="randTarget10">
-                <div class="MOSES">
-                    <div class="MOSES2"><h2>SodaTestSFX.mp3</h2></div>
-                    <div class="MOSES2">
+                <div class="audioListSub1">
+                    <div class="audioListSub2"><h2>SodaTestSFX.mp3</h2></div>
+                    <div class="audioListSub2">
                         <audio controls>
                             Your browser does not support this feature.
                             <source src="audioFiles/SodaTestSFX.mp3" type="audio/mpeg">
                         </audio>
-                        <i class="fa-solid fa-download"></i>
+                        <i class="fa-solid fa-download switchBtn"></i>
                     </div>
                 </div>
         </div>
 
         <div class="audioList" id="randTarget11">
-                <div class="MOSES">
-                    <div class="MOSES2"><h2>SodaTestSFX.wav</h2></div>
-                    <div class="MOSES2">
+                <div class="audioListSub1">
+                    <div class="audioListSub2"><h2>SodaTestSFX.wav</h2></div>
+                    <div class="audioListSub2">
                         <audio controls>
                             Your browser does not support this feature.
                             <source src="audioFiles/SodaTestSFX.wav" type="audio/mpeg">
                         </audio>
-                        <i class="fa-solid fa-download"></i>
+                        <i class="fa-solid fa-download switchBtn"></i>
                     </div>
                 </div>
         </div>
 
         <div class="audioList" id="randTarget12">
-                <div class="MOSES">
-                    <div class="MOSES2"><h2>TEST</h2></div>
-                    <div class="MOSES2">
+                <div class="audioListSub1">
+                    <div class="audioListSub2"><h2>TEST</h2></div>
+                    <div class="audioListSub2">
                         <audio controls>
                             Your browser does not support this feature.
                             <source src="audioFiles/metal_pipe.mp3" type="audio/mpeg">
                         </audio>
-                        <i class="fa-solid fa-download"></i>
+                        <i class="fa-solid fa-download switchBtn"></i>
                     </div>
                 </div>
         </div>
 
         <div class="audioList" id="randTarget13">
-                <div class="MOSES">
-                    <div class="MOSES2"><h2>TEST Numero dos</h2></div>
-                    <div class="MOSES2">
+                <div class="audioListSub1">
+                    <div class="audioListSub2"><h2>TEST Numero dos</h2></div>
+                    <div class="audioListSub2">
                         <audio controls>
                             Your browser does not support this feature.
                             <source src="audioFiles/metal_pipe.mp3" type="audio/mpeg">
                         </audio>
-                        <i class="fa-solid fa-download"></i>
+                        <i class="fa-solid fa-download switchBtn"></i>
                     </div>
                 </div>
         </div>
@@ -270,6 +272,24 @@ Section for the flexboxes containing the collections/Popular sounds
 FIX LATER there is definitely a much more efficiant way to do this
 -->
 <script>
+    // let css_data;
+    // let css_obj;
+    
+    // function getCSS(element) {
+    //         css_data = '';
+    //         css_obj = getComputedStyle(element);
+
+    //         for (let i = 0; i < css_obj.length; i++) {
+    //             css_data +=
+    //                 css_obj[i] + ':' +
+    //                 css_obj.getPropertyValue(css_obj[i])
+    //                 + ';<br>';
+    //         }
+    //     }
+
+    // getCSS(document.getElementById("randTarget1"))
+    // console.log(css_data)
+
     document.getElementById("randTarget1").style.backgroundColor = genRandCol()
     document.getElementById("randTarget2").style.backgroundColor = genRandCol()
     document.getElementById("randTarget3").style.backgroundColor = genRandCol()
@@ -284,6 +304,7 @@ FIX LATER there is definitely a much more efficiant way to do this
     document.getElementById("randTarget11").style.backgroundColor = genRandCol()
     document.getElementById("randTarget12").style.backgroundColor = genRandCol()
     document.getElementById("randTarget13").style.backgroundColor = genRandCol()
+
 </script>
 
 </body>
