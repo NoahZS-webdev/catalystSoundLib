@@ -1,5 +1,5 @@
 .mainSect {
-    background-color: #ffffff;
+    background-color: #12171b;
     text-align: center;
     margin: -12em 2em 2em 2em;
     padding: 1em;
@@ -11,7 +11,7 @@
 .dropBox {
     display: flex;
     flex-direction: column;
-    background-color: #c3cad3;
+    background-color: #1f2b5d;
     height: 30em;
     border-radius: 5px;
     border: double #707070 5px;
@@ -40,4 +40,20 @@
 
 .options {
     text-align: left;
+}
+
+.options input[type=text], select, textarea{
+    background-color: #3754BE;
+    color: #ffffff;
+}
+
+.options label{
+    color: #ffffff;
+}
+.options h3{
+    color: #ffffff;
+}
+button{
+    color: #ffffff;
+    background-color: #8337be;
 }

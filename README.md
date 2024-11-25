@@ -7,7 +7,7 @@ If not, just ask either me (Noah) or Nathan! :)
 ====================SCOPE====================
 This is a website that will be uploaded to the catalyst webserver.
 Students will be able to upload and download different audio files from this website.
-Currently this project is is it's early stages, however it will gain more functionality over time. eventually users should be able to:
+Currently this project is in it's early stages, however it will gain more functionality over time. eventually users should be able to:
 
 1) Upload and download sounds in both WAV and MP3 form
 2) put tags on thier sounds to make it easier to find via searching
