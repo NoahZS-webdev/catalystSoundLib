@@ -350,23 +350,6 @@ input[type=search], select, textarea {
 
 /* Styles for about us section */
 
-.aboutUs {
-    background-color: #737373;
-}
-
-.person {
-    display: flex;
-    flex-direction: row;
-}
-
-.aboutLeft{
-    flex-basis: 25%;
-}
-
-.aboutRight{
-    flex-basis: 75%;
-}
-
 
 
 /*
