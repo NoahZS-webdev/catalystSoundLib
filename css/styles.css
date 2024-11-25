@@ -327,6 +327,27 @@ input[type=search], select, textarea {
 
 /* end styles for main section */
 
+/* Styles for about us section */
+
+.aboutUs {
+    background-color: #737373;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutLeft{
+
+}
+
+.aboutRight{
+
+}
+
+
+
 /*
 MOBILE STYLES BEGIN
 */
