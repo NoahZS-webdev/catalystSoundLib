@@ -1,27 +1,35 @@
-let randCol;
-randCol = 0;
+let randCol = 0;
+let newCol = 0;
+genRandCol
 
 function genRandCol() {
     /* generates random value 1-5 (inclusive) */
-    randCol = Math.floor(Math.random() * 5);
+    var newCol = Math.floor(Math.random() * 5);
+    
+    if(newCol != randCol){
+        randCol = newCol;
+    }else if (newCol == randCol){
+        while(newCol == randCol){
+            var newCol = Math.floor(Math.random() * 5);
+        }
+    }
     /* takes random value and assigns a color */
-    if (randCol == 1) {
+    if (newCol == 1) {
         return "#599dcf"
     }
-    else if (randCol == 2) {
-        return "#6C85E0"
+    else if (newCol == 2) {
+        return "#7800F0"
     }
-    else if (randCol == 3) {
-        return "#6CCFE0"
+    else if (newCol == 3) {
+        return "#0070F0"
     }
-    else if (randCol == 4) {
+    else if (newCol == 4) {
         return "#786CE0"
     }
-    else if (randCol == 5) {
+    else if (newCol == 5) {
         return "#3754be"
     }
-    else if (randCol == 0) {
+    else if (newCol == 0) {
         return "#8337be"
     }
-
 }
