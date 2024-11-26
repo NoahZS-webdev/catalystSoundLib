@@ -4,9 +4,10 @@
 $servername = "";
 $username = "";
 $password = "";
+$dbname = "";
 
 //create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 //check connection
 if ($conn->connect_error) {
@@ -17,11 +18,9 @@ echo"Connected Successfully";
 
 //the following code is Noah goofing off. you can delete at any time
 
-$sql = "CREATE DATABASE people";
-if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully";
-}else{
-    echo "Error creating database:" . $conn->error;
-}
+$sql = "CREATE TABLE people (
+id INT NOT NULL,
+
+)";
 
 ?>
