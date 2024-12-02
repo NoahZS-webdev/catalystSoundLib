@@ -64,10 +64,12 @@ a {
 
 /* aligns and places audio visualizer image within topBox */
 .bannerImg {
-    max-width: 90%;
     position: relative;
     margin-top: -250px;
+    margin-left: 2.5%;
+    max-width: 95%;
     z-index: -1;
+    height: 100%;
 }
 
 /* the flexbox that contains the nav bar and everythin in it */
