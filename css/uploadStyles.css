@@ -11,7 +11,7 @@
 .dropBox {
     display: flex;
     flex-direction: column;
-    background-color: #1f2b5d;
+    background-color: #3754BE;
     height: 30em;
     border-radius: 5px;
     border: double #707070 5px;
@@ -43,7 +43,7 @@
 }
 
 .options input[type=text], select, textarea{
-    background-color: #3754BE;
+    background-color:     #599dcf;
     color: #ffffff;
 }
 
