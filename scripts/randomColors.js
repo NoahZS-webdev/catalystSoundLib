@@ -6,6 +6,10 @@ function genRandCol() {
     /* generates random value 1-5 (inclusive) */
     var newCol = Math.floor(Math.random() * 5);
     
+    /* This makes it so that it is much more unlikely for two colors will generate next to each 
+    other, it's not perfect and if you have questions ask Nathan (although he himself barely 
+    understands this fucking code...) */
+    
     if(newCol != randCol){
         randCol = newCol;
     }else if (newCol == randCol){
