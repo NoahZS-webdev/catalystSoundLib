@@ -349,6 +349,10 @@ input[type=search], select, textarea {
     font-style: italic;
 }
 
+.spacer a{
+    color: #232c35;
+}
+
 /* end styles for main section */
 
 /* Styles for about us section */
