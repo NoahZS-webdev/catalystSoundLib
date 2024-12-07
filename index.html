@@ -43,8 +43,17 @@
 
         <!-- Section for the search bar -->
         <div class="flexSearch">
-                <input type="search" id="search" name="search" placeholder="What are you looking for?">
+            <form class="form">
+                <input type="search" id="search" name="search" class="input" placeholder="What are you looking for?">
+            </form>
         </div>
+        <div class="results-container">
+            <ul class="results-list" id="list">
+            
+            </ul>
+        </div>
+        
+        <script src="scripts/main.js"></script>
 
         <!--flexbox that contains buttons in the nav bar (Both left and right)-->
         <div class="flexHeader">
@@ -59,8 +68,6 @@
     </div>
     <!--Banner image 
     FIX LATER
-
-    UPDATE! DONT CHANGE IT! IT BREAKS EVERYTHING (for some fucking reason) - NOAH
     -->
         <div>
             <img class="bannerImg" src="media/visualizerMOD.png ">
