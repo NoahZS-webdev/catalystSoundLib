@@ -1,5 +1,5 @@
 const sounds = [
-    {name: 'becky'}
+    {name: 'becky'},
 ]
 const searchInput =document.querySelector('.input')
 
@@ -32,12 +32,30 @@ function setList(results){
         resultItem.classList.add('result-item')
     
         // grabbing the name of the current point of the loop and adding the name as the list item's text
-        const text = document.createTextNode(sounds.name)
+        const text = document.createTextNode(sound.name)
 
         // appending the text to the result item
         resultItem.appendChild(text)
 
         // appending the result item to the list
         list.appendChild(resultItem)
+        
+        if (results.length === 0 ){
+        noResults()
     }
+}
+
+
+function noResults(){
+    // create an element for the error; a list item ("li")
+    const error = document.createElement('li')
+    // adding a class name of "error-message" to our error element
+    error.classList.add('error-message')
+
+    // creating text for our element
+    const text = document.createTextNode('No results found. Sorry!')
+    // appending the text to our element
+    error.appendChild(text)
+    // appending the error to our list element
+    list.appendChild(error)
 }
