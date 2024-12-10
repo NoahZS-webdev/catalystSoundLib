@@ -8,7 +8,7 @@ function genRandCol() {
     
     /* This makes it so that it is much more unlikely for two colors will generate next to each 
     other, it's not perfect and if you have questions ask Nathan (although he himself barely 
-    understands this fucking code...) */
+    understands this dang code...) */
     
     if(newCol != randCol){
         randCol = newCol;
