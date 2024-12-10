@@ -7,7 +7,15 @@
 </head>
 <body>
 
-<?php 
+<?php
+
+#get form values
+$sName = $_POST["sName"];
+$author = $_POST["author"];
+$fileType = $_POST["fileType"];
+
+echo "Got: <br>";
+echo "sName:". $sName ."author:". $author ."fileType:". $fileType;
 
 //Log into server
 $servername = "localhost";
@@ -35,7 +43,7 @@ echo"Connected Successfully<br><br>";
 
 // $sql = "SELECT * FROM audioData";
 $sql = "INSERT INTO audioData (dispName, author, fileType)
-VALUES ('PLEASE WORK FOR THE LOVE OF GOD', 'a silly lil guy', 'wav')";
+VALUES ($sName, $author, $fileType)";
 
 if ($conn->query($sql) === TRUE) {
     echo "Some shit was successful idk man i just work here";
