@@ -43,7 +43,7 @@ echo"Connected Successfully<br><br>";
 
 // $sql = "SELECT * FROM audioData";
 $sql = "INSERT INTO audioData (dispName, author, fileType)
-VALUES ($sName, $author, $fileType)";
+VALUES ('$sName', '$author', '$fileType')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Some shit was successful idk man i just work here";
