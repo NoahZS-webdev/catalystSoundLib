@@ -131,7 +131,7 @@ a {
 }
 
 /* class that styles input */
-input[type=search], select, textarea {
+input[type=text], select, textarea {
     background-color: #3754BE;
     color: #edfdff;
     border-radius: 5px;
@@ -141,7 +141,7 @@ input[type=search], select, textarea {
     text-align: left;
     font-style: italic;
     font-size: 1.25em;
-}input[type=search]::placeholder{
+}input[type=text]::placeholder{
     color: #ffffff;
 }
 

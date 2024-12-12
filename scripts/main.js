@@ -1,24 +1,27 @@
 const sounds = [
     {name: 'becky'},
 ]
-const searchInput =document.querySelector('.input')
 
-searchInput.addEventListener("input", (e) => {
-    // Assigns the value of the event's target to a variable (whatever is typed into the search bar)
-    let value = e.target.value
-    
-    // Checks is input exists and if it is larger than zero
-    if (value && value.trim().length > 0){
-        // Refefines 'value' to exclude white space and changes input to all lowercase letters
-        value = value.trim().toLowerCase()
-        // Return the results only if the value of the search is included in the sound's display name
-        setList(sounds.filter(sound => {
-            return sound.name.includes(value)
-        }))
-    } else {
-        // returns nothing
-        // input is invalid -- show and error message or show no results
-    }
+function search(){
+    const searchInput =document.querySelector('.input')
+
+    searchInput.addEventListener("input", (e) => {
+        // Assigns the value of the event's target to a variable (whatever is typed into the search bar)
+        let value = e.target.value
+        
+        // Checks is input exists and if it is larger than zero
+        if (value && value.trim().length > 0){
+            // Refefines 'value' to exclude white space and changes input to all lowercase letters
+            value = value.trim().toLowerCase()
+            // Return the results only if the value of the search is included in the sound's display name
+            setList(sounds.filter(sound => {
+                return sound.name.includes(value)
+            }))
+        } else {
+            // returns nothing
+            // input is invalid -- show and error message or show no results
+        }
+    });
 }
                              
 // showing results on a page:
