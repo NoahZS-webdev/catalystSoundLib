@@ -15,7 +15,7 @@ $author = $_POST["author"];
 $fileType = $_POST["fileType"];
 
 echo "Got: <br>";
-echo "sName:". $sName ."author:". $author ."fileType:". $fileType;
+echo "sName: ". $sName . '<br>' ."author: ". $author . '<br>' ."fileType: ". $fileType . "<br>";
 
 //Log into server
 $servername = "localhost";
