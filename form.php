@@ -44,7 +44,7 @@
     </div>
 
     <section class="mainSect">
-    <form action="basicallyaterminal.php" method="POST">
+    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <div class="surface">
         
             <div class="subSurface">
@@ -79,7 +79,18 @@
     </form>
     </section>
 
+    <?php
 
+    // define vars and set to empty
+    $sName = $author = $fileType = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $sName = test_input($_POST["sName"]);
+        $author = 
+    }
+    
+    
+    ?>
 
 
 
