@@ -47,7 +47,7 @@
         <!-- Section for the search bar -->
         <div class="flexSearch">
             <form class="form">
-                <input type="text" id="search" name="search" class="input" placeholder="What are you looking for?">
+                <input type="text" id="search" name="search" class="input" placeholder="What are you looking for?" oninput="document.getElementById('jscript1').style.display = 'none'">
             </form>
         </div>
         <div class="results-container">
@@ -73,7 +73,7 @@
     FIX LATER
     -->
         <div>
-            <img class="bannerImg" src="media/visualizerMOD.png ">
+            <img class="bannerImg" src="media/visualizerMOD.png">
         </div>
     </div>
 
@@ -87,7 +87,7 @@ Section for the flexboxes containing the collections/Popular sounds
  Ask Noah about it.
  Only he can comprehend the hellscape he has created.
  -->
- <section class="mainSection">
+ <section class="mainSection" id="jscript1">
 <div class="mainDiv">
  <div class="filterdpop">
     <div class="h1Container"><h1>Collections</h1></div>
