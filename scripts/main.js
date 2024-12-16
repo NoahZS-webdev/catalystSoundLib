@@ -3,7 +3,7 @@ const sounds = [
 ]
 
 function search(){
-    const searchInput =document.querySelector('.input')
+    const searchInput = document.querySelector('.input')
 
     searchInput.addEventListener("input", (e) => {
         // Assigns the value of the event's target to a variable (whatever is typed into the search bar)
@@ -18,6 +18,7 @@ function search(){
                 return sound.name.includes(value)
             }))
         } else {
+            return false;
             // returns nothing
             // input is invalid -- show and error message or show no results
         }
@@ -44,7 +45,8 @@ function setList(results){
         list.appendChild(resultItem)
         
         if (results.length === 0 ){
-        noResults()
+        return noResults()
+        }
     }
 }
 
@@ -61,4 +63,11 @@ function noResults(){
     error.appendChild(text)
     // appending the error to our list element
     list.appendChild(error)
+}
+
+function enterClick(event) {
+    if (event.key === "Enter") {
+        document.getElementById('jscript1').style.display = 'none'
+        return console.log(setList(results))
+    }
 }
