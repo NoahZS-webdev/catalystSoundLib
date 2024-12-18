@@ -80,5 +80,7 @@ $conn->close();
 
  -->
 
+<img src="media/spongebobmeboy.gif" alt="grooving">
+
 </body>
 </html>
